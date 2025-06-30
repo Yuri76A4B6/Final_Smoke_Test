@@ -24,7 +24,7 @@ class Base():
     def get_screenshot(self):
         now_date = datetime.datetime.now().strftime("%Y.%m.%d-%H.%M.%S")
         name_screenshot = 'screenshot' + now_date + ".png"
-        self.driver.save_screenshot('C:\\Python projects\\PythonProject\\automation_practice\\screen' + name_screenshot)
+        self.driver.save_screenshot('D:\\Python\\Final project QA Auto\\screen' + name_screenshot)
 
     """Метод assert URL"""
 
@@ -32,3 +32,7 @@ class Base():
         get_url = self.driver.current_url
         assert get_url == result
         print("Good value URL")
+
+    """Метод скроллинга экрана"""
+    def scroll_down(self, x,y):
+        self.driver.execute_script(f"window.scrollTo({x}, {y});")
