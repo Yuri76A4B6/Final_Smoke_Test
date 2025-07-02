@@ -1,0 +1,33 @@
+
+-----
+Test: test_buy.py::test_buy_product (call)
+Start time: 2025-07-02 23:00:29.657496
+Start name method: find_light_page
+
+End time: 2025-07-02 23:00:33.923945
+End name method: find_light_page
+URL: https://www.minimaks.ru/catalog/svetotekhnika/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product (call)
+Start time: 2025-07-02 23:00:33.923945
+Start name method: light_page_choose_type_of_lamps
+
+End time: 2025-07-02 23:00:36.015443
+End name method: light_page_choose_type_of_lamps
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product (call)
+Start time: 2025-07-02 23:00:36.015443
+Start name method: choose_lamp_for_buy
+
+End time: 2025-07-02 23:00:46.411448
+End name method: choose_lamp_for_buy
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/?available=y
+
+-----

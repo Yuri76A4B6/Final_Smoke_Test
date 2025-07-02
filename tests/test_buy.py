@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 import allure
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -20,7 +22,6 @@ def test_buy_product():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
     options.add_argument("--guest")
-    options.add_argument("--disable-notifications")
     options.add_argument("--disable-notifications")
     options.add_argument("--disable-infobars")
     options.add_argument("--disable-extensions")
@@ -47,11 +48,6 @@ def test_buy_product():
 
     llp = Led_lamps_page(driver)
     llp.choose_lamp_for_buy()
-    # try:
-    #     llp.choose_lamp_for_buy()
-    # except ElementClickInterceptedException as e:
-    #     print(f"Ошибка {e}")
-    #     bc.scroll_down(0,900)
-    #     llp.choose_lamp_for_buy()
+
 
 

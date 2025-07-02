@@ -1,10 +1,10 @@
 
 -----
 Test: test_buy.py::test_buy_product (call)
-Start time: 2025-06-30 20:56:19.068211
+Start time: 2025-07-02 22:48:00.918690
 Start name method: find_light_page
 
-End time: 2025-06-30 20:56:22.730089
+End time: 2025-07-02 22:48:05.604174
 End name method: find_light_page
 URL: https://www.minimaks.ru/catalog/svetotekhnika/
 
@@ -12,10 +12,10 @@ URL: https://www.minimaks.ru/catalog/svetotekhnika/
 
 -----
 Test: test_buy.py::test_buy_product (call)
-Start time: 2025-06-30 20:56:22.730089
+Start time: 2025-07-02 22:48:05.604174
 Start name method: light_page_choose_type_of_lamps
 
-End time: 2025-06-30 20:56:23.941310
+End time: 2025-07-02 22:48:07.675950
 End name method: light_page_choose_type_of_lamps
 URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/
 
@@ -23,6 +23,6 @@ URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/
 
 -----
 Test: test_buy.py::test_buy_product (call)
-Start time: 2025-06-30 20:56:23.941310
+Start time: 2025-07-02 22:48:07.675950
 Start name method: choose_lamp_for_buy
 
