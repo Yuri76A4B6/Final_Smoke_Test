@@ -17,14 +17,24 @@ class Base():
     def assert_word(self, word, expected_result):
         value_word = word.text
         assert value_word == expected_result
-        print("Good value")
+        print("Название товара соответствует")
+
+    """Метод для валидации цены товара"""
+
+    def assert_price(self, price, expected_price):
+        value_price = price.text
+        value_price_digits = value_price.rstrip(" ₽")
+        value_expected_price = expected_price.text
+        expected_price_digits = value_expected_price.rstrip(" ₽")
+        assert value_price_digits == expected_price_digits
+        print("Валидация цены прошла успешно")
 
     """Метод screenshot"""
 
     def get_screenshot(self):
         now_date = datetime.datetime.now().strftime("%Y.%m.%d-%H.%M.%S")
-        name_screenshot = 'screenshot' + now_date + ".png"
-        self.driver.save_screenshot('D:\\Python\\Final project QA Auto\\screen' + name_screenshot)
+        name_screenshot = 'screenshot ' + now_date + ".png"
+        self.driver.save_screenshot('C:\\Python projects\\PythonProject1\\Final_Smoke_Test\\screen' + name_screenshot)
 
     """Метод assert URL"""
 

@@ -1,0 +1,44 @@
+Current url https://www.minimaks.ru/
+Выполнен переход во вкладку 'Светотехника'
+Current url https://www.minimaks.ru/catalog/svetotekhnika/
+Выполнен переход во вкладку 'Светодиодные лампы'
+Current url https://www.minimaks.ru/catalog/cvetodiodnye-lampy/
+Выполнен клик по фильтру 'Только в наличии'
+Выполнен клик для выбора бренда
+Ошибка Message: element click intercepted: Element is not clickable at point (426, 986)
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7191c6f95+76917]
+	GetHandleVerifier [0x0x7ff7191c6ff0+77008]
+	(No symbol) [0x0x7ff718f79dea]
+	(No symbol) [0x0x7ff718fd8269]
+	(No symbol) [0x0x7ff718fd5c02]
+	(No symbol) [0x0x7ff718fd2c41]
+	(No symbol) [0x0x7ff718fd1b31]
+	(No symbol) [0x0x7ff718fc3368]
+	(No symbol) [0x0x7ff718ff846a]
+	(No symbol) [0x0x7ff718fc2c16]
+	(No symbol) [0x0x7ff718ff8680]
+	(No symbol) [0x0x7ff71902065c]
+	(No symbol) [0x0x7ff718ff8243]
+	(No symbol) [0x0x7ff718fc1431]
+	(No symbol) [0x0x7ff718fc21c3]
+	GetHandleVerifier [0x0x7ff71949d2cd+3051437]
+	GetHandleVerifier [0x0x7ff719497923+3028483]
+	GetHandleVerifier [0x0x7ff7194b58bd+3151261]
+	GetHandleVerifier [0x0x7ff7191e185e+185662]
+	GetHandleVerifier [0x0x7ff7191e971f+218111]
+	GetHandleVerifier [0x0x7ff7191cfb14+112628]
+	GetHandleVerifier [0x0x7ff7191cfcc9+113065]
+	GetHandleVerifier [0x0x7ff7191b6c98+10616]
+	BaseThreadInitThunk [0x0x7ffbad957374+20]
+	RtlUserThreadStart [0x0x7ffbaeefcc91+33]
+
+Выполнен клик на фильтр Gauss
+Выполнен клик на фильтр 'ГРУША'
+Выполнен клик на фильтр 'СВЕЧА'
+Выполнен клик на кнопку 'ЕЩЕ' для выбора дополнительных фильтров форм ламп
+Выполнен клик на фильтр 'ТАБЛЕТКА'
+Выполнен клик на фильтр мощности '10 Вт'
+Выполнен клик на фильтр мощности '12 Вт'
+Выполнен клик на фильтр 'Покрытие колбы'

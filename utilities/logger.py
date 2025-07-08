@@ -4,7 +4,7 @@ import os
 
 class Logger():
     date_78 = str(datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
-    file_name = f"D:\\Python\\Final project QA Auto\\logs" + date_78 + ".log"
+    file_name = f"C:\\Python projects\\PythonProject1\\Final_Smoke_Test\\logs" + date_78 + ".log"
 
     @classmethod
     def write_log_to_file(cls, data: str):

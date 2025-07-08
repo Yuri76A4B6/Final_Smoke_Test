@@ -1,0 +1,77 @@
+
+-----
+Test: test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 12:58:16.521059
+Start name method: find_light_page
+
+End time: 2025-07-08 12:58:19.824059
+End name method: find_light_page
+URL: https://www.minimaks.ru/catalog/svetotekhnika/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 12:58:19.824059
+Start name method: light_page_choose_type_of_lamps
+
+End time: 2025-07-08 12:58:20.580926
+End name method: light_page_choose_type_of_lamps
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 12:58:20.581926
+Start name method: choose_lamp_for_buy
+
+End time: 2025-07-08 12:58:34.542925
+End name method: choose_lamp_for_buy
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/v-forme-grushi/v-forme-svechi/gauss/10-vt/12-vt/matovye/elementary/gauss-elementary/globe-a60/?available=y
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 12:58:34.543936
+Start name method: buy_found_product
+
+End time: 2025-07-08 12:58:35.605629
+End name method: buy_found_product
+URL: https://www.minimaks.ru/personal/cart/table/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 12:58:35.605629
+Start name method: make_order_in_cart
+
+End time: 2025-07-08 12:58:37.034619
+End name method: make_order_in_cart
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 12:58:37.035619
+Start name method: make_fast_registration
+
+End time: 2025-07-08 12:58:37.788619
+End name method: make_fast_registration
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 12:58:37.788619
+Start name method: make_order_last_step
+
+End time: 2025-07-08 12:58:43.931187
+End name method: make_order_last_step
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----

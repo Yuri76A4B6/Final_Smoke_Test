@@ -1,22 +1,19 @@
-import time
-
 from selenium import webdriver
 import allure
-from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import ElementClickInterceptedException
-
+# from selenium.webdriver.chrome.service import Service as ChromeService
+# from selenium.webdriver.common.by import By
+# from webdriver_manager.chrome import ChromeDriverManager
+# from selenium.webdriver.support.wait import WebDriverWait
 import pytest
 from base.base_class import Base
+from pages.authorization_page import Authorization_page
+from pages.cart_page import Cart_page
 from pages.led_lamps_page import Led_lamps_page
 from pages.light_page import Light_page
 from pages.main_page import Main_Page
+from pages.make_order_page_ import Make_order_page
 
 
-#@pytest.mark.run(order=3)
 @allure.description("Test buy product")
 def test_buy_product():
     options = webdriver.ChromeOptions()
@@ -48,6 +45,16 @@ def test_buy_product():
 
     llp = Led_lamps_page(driver)
     llp.choose_lamp_for_buy()
+    llp.buy_found_product()
+    # llp.choose_flux_filters()
+    # llp.choose_type_base_and_glow_temp()
+    cp = Cart_page(driver)
+    cp.make_order_in_cart()
 
+    ap = Authorization_page(driver)
+    ap.make_fast_registration()
+
+    mop = Make_order_page(driver)
+    mop.make_order_last_step()
 
 
