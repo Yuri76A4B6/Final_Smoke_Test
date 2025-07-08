@@ -234,6 +234,7 @@ class Led_lamps_page(Base):
             action = ActionChains(self.driver)
             self.get_current_url()
             self.click_available_lamp()
+            time.sleep(2)
             self.click_brand()
             self.send_brand()
             try:
@@ -242,13 +243,10 @@ class Led_lamps_page(Base):
                 print(f"Ошибка {e}")
                 action.scroll_by_amount(0, 500).perform()
                 self.click_Gauss()
-            time.sleep(3)
             action.scroll_by_amount(0, 600).perform()
             self.click_pear_form()
             self.click_candle_form()
-            time.sleep(2)
             self.click_more_checkbox_form()
-            time.sleep(3)
             self.click_tablet_checkbox_form()
             try:
                 self.click_10W_checkbox()
