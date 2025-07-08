@@ -3,7 +3,7 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import ElementClickInterceptedException
+from selenium.common.exceptions import ElementClickInterceptedException, ElementNotInteractableException
 from selenium.common.exceptions import TimeoutException
 from base.base_class import Base
 from utilities.logger import Logger
@@ -109,13 +109,13 @@ class Led_lamps_page(Base):
         return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.GLOW_6500K)))
 
     def get_finish_set_filter(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.BUTTON_FINISH_SET_FILTER)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.BUTTON_FINISH_SET_FILTER)))
 
     def get_show_button(self):
-        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.SHOW_BUTTON)))
+        return WebDriverWait(self.driver, 12).until(EC.element_to_be_clickable((By.XPATH, self.SHOW_BUTTON)))
 
     def get_buy_button(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.BUY_PRODUCT_BUTTON)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.BUY_PRODUCT_BUTTON)))
 
     def get_cart(self):
         return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.CART_LOCATION)))
@@ -220,7 +220,11 @@ class Led_lamps_page(Base):
         print("Выполнен клик на кнопку купить")
 
     def click_cart(self):
-        self.get_cart().click()
+        try:
+            self.get_cart().click()
+        except ElementNotInteractableException as v:
+            print(f"Элемент не кликается. Ошибка {v}")
+            self.get_cart().click()
         print("Выполнен клик на кнопку корзина")
     # METHODS
 
@@ -260,7 +264,6 @@ class Led_lamps_page(Base):
             self.click_series_elementary()
             self.click_series_gauss()
             self.click_series_globe_a60()
-            time.sleep(2)
             self.click_show_button()
             Logger.add_end_step(url=self.driver.current_url, method="choose_lamp_for_buy")
 

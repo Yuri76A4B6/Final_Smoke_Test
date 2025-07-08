@@ -27,5 +27,6 @@ class Authorization_page(Base):
     def make_fast_registration(self):
         with allure.step("Make fast registration"):
             Logger.add_start_step(method="make_fast_registration")
+            self.get_current_url()
             self.click_fast_registration()
             Logger.add_end_step(url=self.driver.current_url, method="make_fast_registration")

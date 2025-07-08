@@ -1,0 +1,77 @@
+
+-----
+Test: tests/test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 16:58:03.623233
+Start name method: find_light_page
+
+End time: 2025-07-08 16:58:10.514233
+End name method: find_light_page
+URL: https://www.minimaks.ru/catalog/svetotekhnika/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 16:58:10.515233
+Start name method: light_page_choose_type_of_lamps
+
+End time: 2025-07-08 16:58:11.317233
+End name method: light_page_choose_type_of_lamps
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 16:58:11.318233
+Start name method: choose_lamp_for_buy
+
+End time: 2025-07-08 16:58:26.266220
+End name method: choose_lamp_for_buy
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/v-forme-grushi/v-forme-svechi/gauss/10-vt/12-vt/matovye/elementary/gauss-elementary/globe-a60/?available=y
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 16:58:26.267228
+Start name method: buy_found_product
+
+End time: 2025-07-08 16:58:27.489105
+End name method: buy_found_product
+URL: https://www.minimaks.ru/personal/cart/table/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 16:58:27.490099
+Start name method: make_order_in_cart
+
+End time: 2025-07-08 16:58:29.647113
+End name method: make_order_in_cart
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 16:58:29.648112
+Start name method: make_fast_registration
+
+End time: 2025-07-08 16:58:30.568113
+End name method: make_fast_registration
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product (call)
+Start time: 2025-07-08 16:58:30.569112
+Start name method: make_order_last_step
+
+End time: 2025-07-08 16:58:33.113888
+End name method: make_order_last_step
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----

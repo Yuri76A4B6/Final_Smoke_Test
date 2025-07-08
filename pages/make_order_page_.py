@@ -26,31 +26,31 @@ class Make_order_page(Base):
     # GETTERS
 
     def get_product_price(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.PRODUCT_PRICE)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.PRODUCT_PRICE)))
 
     def get_total_price(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.TOTAL_PRICE)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.TOTAL_PRICE)))
 
     def get_order_name(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.ORDER_NAME)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.ORDER_NAME)))
 
     def get_order_phone_number(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.ORDER_PHONE_NUMBER)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.ORDER_PHONE_NUMBER)))
 
     def get_order_email(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.ORDER_EMAIL)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.ORDER_EMAIL)))
 
     def get_order_receipt_method(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.ORDER_RECEIPT_METHOD)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.ORDER_RECEIPT_METHOD)))
 
     def get_adress_point(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.ADRESS_POINT)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.ADRESS_POINT)))
 
     def get_button_adress_point(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.BUTTON_ADRESS_POINT)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.BUTTON_ADRESS_POINT)))
 
     def get_comment_input_field(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.COMMENT_INPUT_FIELD)))
+        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.COMMENT_INPUT_FIELD)))
 
     # ACTIONS
     def input_order_name(self):

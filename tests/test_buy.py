@@ -1,9 +1,5 @@
 from selenium import webdriver
 import allure
-# from selenium.webdriver.chrome.service import Service as ChromeService
-# from selenium.webdriver.common.by import By
-# from webdriver_manager.chrome import ChromeDriverManager
-# from selenium.webdriver.support.wait import WebDriverWait
 import pytest
 from base.base_class import Base
 from pages.authorization_page import Authorization_page
