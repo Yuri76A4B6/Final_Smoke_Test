@@ -8,10 +8,6 @@ from utilities.logger import Logger
 
 class Make_order_page(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     # LOCATORS
     ORDER_NAME = "//input[@name='ORDER_PROP_1']"
     ORDER_PHONE_NUMBER = "//input[@name='ORDER_PROP_3']"

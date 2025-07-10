@@ -7,9 +7,6 @@ from utilities.logger import Logger
 
 class Authorization_page(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
 
     # LOCATORS
     USER_LOGIN = "//input[@name='USER_LOGIN']"

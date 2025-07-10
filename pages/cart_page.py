@@ -11,10 +11,6 @@ from utilities.logger import Logger
 
 class Cart_page(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     # LOCATORS
     NAME_PRODUCT_IN_CART = ("//a[@href='/product/lampa-svetodiodnaya-10-vt-e14-c37-4100k-730lm-led-svecha-elementary-"
                             "33120-gauss/' and @rel='noreferrer']")

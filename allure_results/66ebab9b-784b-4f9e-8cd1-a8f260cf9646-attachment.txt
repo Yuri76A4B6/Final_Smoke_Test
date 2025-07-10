@@ -1,0 +1,64 @@
+Current url https://www.minimaks.ru/
+Выполнен переход во вкладку 'Светотехника'
+Current url https://www.minimaks.ru/catalog/svetotekhnika/
+Выполнен переход во вкладку 'Светодиодные лампы'
+Current url https://www.minimaks.ru/catalog/cvetodiodnye-lampy/
+Выполнен клик для выбора бренда
+Ошибка Message: element click intercepted: Element is not clickable at point (426, 1007)
+  (Session info: chrome=138.0.7204.98)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7bb216f75+76917]
+	GetHandleVerifier [0x0x7ff7bb216fd0+77008]
+	(No symbol) [0x0x7ff7bafc9dea]
+	(No symbol) [0x0x7ff7bb028269]
+	(No symbol) [0x0x7ff7bb025c02]
+	(No symbol) [0x0x7ff7bb022c41]
+	(No symbol) [0x0x7ff7bb021b31]
+	(No symbol) [0x0x7ff7bb013368]
+	(No symbol) [0x0x7ff7bb04846a]
+	(No symbol) [0x0x7ff7bb012c16]
+	(No symbol) [0x0x7ff7bb048680]
+	(No symbol) [0x0x7ff7bb07065c]
+	(No symbol) [0x0x7ff7bb048243]
+	(No symbol) [0x0x7ff7bb011431]
+	(No symbol) [0x0x7ff7bb0121c3]
+	GetHandleVerifier [0x0x7ff7bb4ed2ad+3051437]
+	GetHandleVerifier [0x0x7ff7bb4e7903+3028483]
+	GetHandleVerifier [0x0x7ff7bb50589d+3151261]
+	GetHandleVerifier [0x0x7ff7bb23183e+185662]
+	GetHandleVerifier [0x0x7ff7bb2396ff+218111]
+	GetHandleVerifier [0x0x7ff7bb21faf4+112628]
+	GetHandleVerifier [0x0x7ff7bb21fca9+113065]
+	GetHandleVerifier [0x0x7ff7bb206c78+10616]
+	BaseThreadInitThunk [0x0x7ffbada17374+20]
+	RtlUserThreadStart [0x0x7ffbae2fcc91+33]
+
+Выполнен клик на фильтр Gauss
+Выполнен клик на фильтр 'ГРУША'
+Выполнен клик на фильтр 'СВЕЧА'
+Выполнен клик на кнопку 'ЕЩЕ' для выбора дополнительных фильтров форм ламп
+Выполнен клик на фильтр 'ТАБЛЕТКА'
+Выполнен клик на фильтр мощности '10 Вт'
+Выполнен клик на фильтр мощности '12 Вт'
+Выполнен клик на фильтр 'Покрытие колбы'
+Выполнен клик на фильтр 'Серия/ELEMENTARY'
+Выполнен клик на фильтр 'Серия/GAUSS'
+Выполнен клик на фильтр 'Серия/GLOBE A60'
+Выполнен клик на фильтр подбора ламп
+Выполнен клик на кнопку купить
+Выполнен клик на кнопку корзина
+Current url https://www.minimaks.ru/personal/cart/table/
+Название товара соответствует
+Выполнен клик по чекбоксу для выбора товара
+Выполнен клик для оформления заказа
+Current url https://www.minimaks.ru/personal/orders/make/
+Выполнен клик на быструю регистрацию
+Current url https://www.minimaks.ru/personal/orders/make/
+Валидация цены прошла успешно
+Заполнено поле с именем
+Заполнено поле с номером телефона
+Заполнено поле с адресом электронной почты
+Выбран метод получения заказа
+Выбрано место получения заказа
+Выполнен клик для подтверждения выбора пункта выдачи
+Выполнено заполнение поля 'комментарий к заказу'

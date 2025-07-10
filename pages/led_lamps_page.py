@@ -12,9 +12,6 @@ import time
 
 class Led_lamps_page(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
 
     # LOCATORS FILTERS
     AVAILABLE = "(//ins[text()='Только в наличии'])[1]"
@@ -109,7 +106,7 @@ class Led_lamps_page(Base):
         return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.GLOW_6500K)))
 
     def get_finish_set_filter(self):
-        return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, self.BUTTON_FINISH_SET_FILTER)))
+        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.XPATH, self.BUTTON_FINISH_SET_FILTER)))
 
     def get_show_button(self):
         return WebDriverWait(self.driver, 12).until(EC.element_to_be_clickable((By.XPATH, self.SHOW_BUTTON)))
@@ -263,6 +260,44 @@ class Led_lamps_page(Base):
             self.click_series_gauss()
             self.click_series_globe_a60()
             self.click_show_button()
+            Logger.add_end_step(url=self.driver.current_url, method="choose_lamp_for_buy")
+
+    def choose_lamp_for_buy_if_not_available(self):
+        with allure.step("Choose lamp for buy"):
+            Logger.add_start_step(method="choose_lamp_for_buy")
+            action = ActionChains(self.driver)
+            self.get_current_url()
+            self.click_brand()
+            self.send_brand()
+            try:
+                self.click_Gauss()
+            except ElementClickInterceptedException as e:
+                print(f"Ошибка {e}")
+                action.scroll_by_amount(0, 500).perform()
+                self.click_Gauss()
+            action.scroll_by_amount(0, 600).perform()
+            self.click_pear_form()
+            self.click_candle_form()
+            self.click_more_checkbox_form()
+            self.click_tablet_checkbox_form()
+            try:
+                self.click_10W_checkbox()
+                self.click_12W_checkbox()
+            except ElementClickInterceptedException as d:
+                print(f"Ошибка {d}")
+                _move_to_12W = self.get_12W_power()
+                self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", _move_to_12W)
+                self.click_10W_checkbox()
+                self.click_12W_checkbox()
+            self.click_matte_checkbox()
+            action.scroll_by_amount(0, 700).perform()
+            self.click_series_elementary()
+            self.click_series_gauss()
+            self.click_series_globe_a60()
+            _move_to_finish_button = self.get_finish_set_filter()
+            self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", _move_to_finish_button)
+            time.sleep(2)  # Без таймслипа не успевает навестись на кнопку, не кликает и тест падает...
+            self.click_finish_set_button()
             Logger.add_end_step(url=self.driver.current_url, method="choose_lamp_for_buy")
 
     def buy_found_product(self):

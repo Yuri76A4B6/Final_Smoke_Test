@@ -1,0 +1,77 @@
+
+-----
+Test: test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:40:52.007532
+Start name method: find_light_page
+
+End time: 2025-07-10 11:40:55.266794
+End name method: find_light_page
+URL: https://www.minimaks.ru/catalog/svetotekhnika/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:40:55.267794
+Start name method: light_page_choose_type_of_lamps
+
+End time: 2025-07-10 11:40:56.077797
+End name method: light_page_choose_type_of_lamps
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:40:56.078796
+Start name method: choose_lamp_for_buy
+
+End time: 2025-07-10 11:41:02.463756
+End name method: choose_lamp_for_buy
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/v-forme-grushi/v-forme-svechi/gauss/10-vt/12-vt/matovye/elementary/gauss-elementary/globe-a60/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:41:02.464756
+Start name method: buy_found_product
+
+End time: 2025-07-10 11:41:06.265730
+End name method: buy_found_product
+URL: https://www.minimaks.ru/personal/cart/table/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:41:06.266730
+Start name method: make_order_in_cart
+
+End time: 2025-07-10 11:41:12.003829
+End name method: make_order_in_cart
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:41:12.003829
+Start name method: make_fast_registration
+
+End time: 2025-07-10 11:41:15.654966
+End name method: make_fast_registration
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----
+
+-----
+Test: test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:41:15.655966
+Start name method: make_order_last_step
+
+End time: 2025-07-10 11:41:18.123323
+End name method: make_order_last_step
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----

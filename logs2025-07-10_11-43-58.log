@@ -1,0 +1,105 @@
+
+-----
+Test: tests/test_buy.py::test_buy_product (call)
+Start time: 2025-07-10 11:43:59.213963
+Start name method: find_light_page
+
+End time: 2025-07-10 11:44:03.263108
+End name method: find_light_page
+URL: https://www.minimaks.ru/catalog/svetotekhnika/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product (call)
+Start time: 2025-07-10 11:44:03.264109
+Start name method: light_page_choose_type_of_lamps
+
+End time: 2025-07-10 11:44:04.030349
+End name method: light_page_choose_type_of_lamps
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product (call)
+Start time: 2025-07-10 11:44:04.031349
+Start name method: choose_lamp_for_buy
+
+
+-----
+Test: tests/test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:44:26.119406
+Start name method: find_light_page
+
+End time: 2025-07-10 11:44:29.695889
+End name method: find_light_page
+URL: https://www.minimaks.ru/catalog/svetotekhnika/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:44:29.695889
+Start name method: light_page_choose_type_of_lamps
+
+End time: 2025-07-10 11:44:30.409822
+End name method: light_page_choose_type_of_lamps
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:44:30.410822
+Start name method: choose_lamp_for_buy
+
+End time: 2025-07-10 11:44:36.820798
+End name method: choose_lamp_for_buy
+URL: https://www.minimaks.ru/catalog/cvetodiodnye-lampy/v-forme-grushi/v-forme-svechi/gauss/10-vt/12-vt/matovye/elementary/gauss-elementary/globe-a60/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:44:36.821798
+Start name method: buy_found_product
+
+End time: 2025-07-10 11:44:44.016616
+End name method: buy_found_product
+URL: https://www.minimaks.ru/personal/cart/table/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:44:44.016616
+Start name method: make_order_in_cart
+
+End time: 2025-07-10 11:44:46.695389
+End name method: make_order_in_cart
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:44:46.695389
+Start name method: make_fast_registration
+
+End time: 2025-07-10 11:44:47.598115
+End name method: make_fast_registration
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----
+
+-----
+Test: tests/test_buy.py::test_buy_product_not_available (call)
+Start time: 2025-07-10 11:44:47.599114
+Start name method: make_order_last_step
+
+End time: 2025-07-10 11:44:50.096085
+End name method: make_order_last_step
+URL: https://www.minimaks.ru/personal/orders/make/
+
+-----

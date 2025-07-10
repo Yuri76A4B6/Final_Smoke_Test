@@ -8,10 +8,6 @@ from utilities.logger import Logger
 
 class Light_page(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     # LOCATORS
     LED_LAMPS = "// a[ @ href = '/catalog/cvetodiodnye-lampy/']" #Светодиодные лампы
     NAKAL_LAMP = "//a[@href='/catalog/lampy-nakalivaniya/']" #Лампы накаливания
